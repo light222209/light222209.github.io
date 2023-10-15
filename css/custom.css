@@ -29,16 +29,20 @@ h1.post-title {
 @import "//at.alicdn.com/t/c/font_4286696_c4tk0cqkd7.css"
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 3em;
+  font-size: 20px;
   /* ���Զ���ͼ���С */
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
 }
   .icon-github:before{
-   /* color: #0d0c0c; */
-  }
-  
+    }
+  .icon-house__easyic:before{
+    }
+  .icon-biaoqian:before{
+    }
+  .icon-ziliaofenlei:before{
+    }
 /* ʱ������Фicon */
 svg.icon {
   /* ���ﶨ��svg.icon�������Butterfly�Դ���note��ǩ��ͻ */
