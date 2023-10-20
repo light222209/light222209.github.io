@@ -5,8 +5,8 @@
     
     <entry>
       <title>FileBrowser搭建轻量级文件服务器</title>
-      <link href="/2023/10/15/FileBrowser%E6%90%AD%E5%BB%BA%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-      <url>/2023/10/15/FileBrowser%E6%90%AD%E5%BB%BA%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+      <link href="/posts/9e1c86cc/"/>
+      <url>/posts/9e1c86cc/</url>
       
         <content type="html"><![CDATA[<p>FileBrowser是一款GO语言开发的轻量级文件服务器，跨平台，免费开源。可以通过浏览器对服务器上的文件进行管理，可以在浏览器上使用查看、下载、修改等各种功能。 你可以把它当作私有网盘来使用。</p><h1 id="UNRAID安装-FileBrowser"><a href="#UNRAID安装-FileBrowser" class="headerlink" title="UNRAID安装 FileBrowser"></a>UNRAID安装 FileBrowser</h1><h2 id="安装配制"><a href="#安装配制" class="headerlink" title="安装配制"></a>安装配制</h2><p><img src="https://s2.loli.net/2023/10/15/3um2R746WgJ5VAX.png" alt="image-20231015181559889" style="zoom: 33%;" /></p><p>点击安装</p><p><img src="https://s2.loli.net/2023/10/15/Y9ciwaJCbEoD3UF.png" alt="image-20231015183645939" style="zoom:33%;" /></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><img src="https://s2.loli.net/2023/10/15/mrSsLHoTwQa7gef.png" alt="image-20231015183852590" style="zoom:33%;" /></p><p><img src="https://s2.loli.net/2023/10/15/Gx2krAW3CQ9FB81.png" alt="image-20231015184134583" style="zoom:33%;" /></p><p><img src="https://s2.loli.net/2023/10/15/wK7DLOTAEuivzsh.png" alt="image-20231015184151052" style="zoom:33%;" /></p><p>设置界面可以对用户、目录、语言进行设置。</p>]]></content>
       
@@ -28,8 +28,8 @@
     
     <entry>
       <title>安装Butterfly主题</title>
-      <link href="/2023/10/15/%E5%AE%89%E8%A3%85Butterfly%E4%B8%BB%E9%A2%98/"/>
-      <url>/2023/10/15/%E5%AE%89%E8%A3%85Butterfly%E4%B8%BB%E9%A2%98/</url>
+      <link href="/posts/fe7f4a08/"/>
+      <url>/posts/fe7f4a08/</url>
       
         <content type="html"><![CDATA[<h2 id="安装Butterfly主题"><a href="#安装Butterfly主题" class="headerlink" title="安装Butterfly主题"></a>安装Butterfly主题</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://gitee.com/immyw/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2023/10/15/Qo3ZHDs1d6bRYtu.png" alt="image-20231015124257370"></p><p>安装插件</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-renderer-pug</span> hexo<span class="literal">-renderer-stylus</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure><p>将\themes\butterfly\目录下的_config.yml复制个副本，并把文件名改为</p><p>_config.butterfly.yml，将文件剪切到根目录。</p><p>以后只需要在_config.butterfly.yml进行配置就行了。</p>]]></content>
       
@@ -55,8 +55,8 @@
     
     <entry>
       <title>Hexo基础环境搭建</title>
-      <link href="/2023/10/15/Hexo%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-      <url>/2023/10/15/Hexo%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+      <link href="/posts/79f55f62/"/>
+      <url>/posts/79f55f62/</url>
       
         <content type="html"><![CDATA[<h2 id="Hexo基础环境搭建"><a href="#Hexo基础环境搭建" class="headerlink" title="Hexo基础环境搭建"></a>Hexo基础环境搭建</h2><p>安装hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>初始化hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>执行此命令，开启本地服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2023/10/15/6vxTEAcVYSGez4a.png" alt="image-20231015123218751"></p><p>本地网址：<a href="http://localhost:4000">http://localhost:4000</a></p><p><img src="https://s2.loli.net/2023/10/15/qgHS2ychrOza6Wu.png" style="zoom: 33%;" /></p>]]></content>
       
@@ -82,8 +82,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2023/10/15/hello-world/"/>
-      <url>/2023/10/15/hello-world/</url>
+      <link href="/posts/4a17b156/"/>
+      <url>/posts/4a17b156/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
