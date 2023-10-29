@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>OpenWrt手动安装PassWall插件</title>
+      <link href="/posts/5fe81f22/"/>
+      <url>/posts/5fe81f22/</url>
+      
+        <content type="html"><![CDATA[<h1 id="OpenWrt手动安装PassWall插件"><a href="#OpenWrt手动安装PassWall插件" class="headerlink" title="OpenWrt手动安装PassWall插件"></a>OpenWrt手动安装PassWall插件</h1><p>​        由于之前安装的OpenWrt都是很早以前的版本，正好今天有空更新一下固件，之前用的都是高大全PLUS版的，最近强迫症犯了，看着一堆用不到的插件很是难受，折腾一下mini版，安装完发现没有PassWall插件，手动安装一下。</p><hr><h2 id="下载passwall插件"><a href="#下载passwall插件" class="headerlink" title="下载passwall插件"></a>下载passwall插件</h2><p>github下载地址</p><blockquote><p><a href="https://github.com/xiaorouji/openwrt-passwall/releases">https://github.com/xiaorouji/openwrt-passwall/releases</a></p></blockquote><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/image-20231029171959981.png" alt="image-20231029171959981" style="zoom:80%;" /></p><p>我的软路由是N5105，下载的是X86架构的固件，另外需要把最上面2个也下载下来，解压后放到一个目录里。</p><h2 id="安装易有云"><a href="#安装易有云" class="headerlink" title="安装易有云"></a>安装易有云</h2><p><strong>Finalhell连接到openwrt</strong></p><p>via curl</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -sSL http://fw.koolcenter.com/binary/LinkEase/Openwrt/install_linkease.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure><p>via wget</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(wget --no-check-certificate -qO- http://fw.koolcenter.com/binary/LinkEase/Openwrt/install_linkease.sh)</span>&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>others</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/LinkEase/Openwrt/install_linkease.sh; sh ./install_linkease.sh</span><br></pre></td></tr></table></figure><p><strong>在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成</strong></p><h2 id="安装PassWall"><a href="#安装PassWall" class="headerlink" title="安装PassWall"></a>安装PassWall</h2><p>点击服务-易有云文件管理器-本地文件管理</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291755157.png" style="zoom:80%;" /></p><p>将之前下载的插件上传到/tmp文件夹中</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291800762.png" alt="image-20231029180045705" style="zoom: 40%;" /></p><p>Finalhell连接到openwrt输入以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp/passwall</span><br></pre></td></tr></table></figure><p>进入到安装文件目录</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opkg install *.ipk</span><br></pre></td></tr></table></figure><p>安装目录里的ipk文件</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291744989.png" alt="image-20231029174452809" style="zoom:80%;" /></p><p>PassWall已经安装成功</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291815134.png" alt="image-20231029181533090"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> OpenWrt </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OpenWrt </tag>
+            
+            <tag> PassWall </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>FileBrowser搭建轻量级文件服务器</title>
       <link href="/posts/9e1c86cc/"/>
       <url>/posts/9e1c86cc/</url>
