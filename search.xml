@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Excel函数</title>
+      <link href="/posts/589ae537/"/>
+      <url>/posts/589ae537/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>激活Win10/Win11/Office</title>
+      <link href="/posts/b97f2775/"/>
+      <url>/posts/b97f2775/</url>
+      
+        <content type="html"><![CDATA[<p>系统安装完后，以道理员身份打开CMD命令行窗口。<br>说明：kms.xspace.in是kms服务器地址，可能会失效，如果激活失败，可以自行搜索kms服务器地址，将kms.xspace.in替换成新的地址即可，比如换成kms.03k.org，参考可用的kms激活服务器有哪些</p><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><h3 id="Windows10企业版激活"><a href="#Windows10企业版激活" class="headerlink" title="Windows10企业版激活"></a>Windows10企业版激活</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43</span><br><span class="line">2.slmgr /skms kms.03k.org</span><br><span class="line">3.slmgr /ato</span><br></pre></td></tr></table></figure><h3 id="Windows11企业版激活"><a href="#Windows11企业版激活" class="headerlink" title="Windows11企业版激活"></a>Windows11企业版激活</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</span><br><span class="line">2.slmgr /skms kms.03k.org</span><br><span class="line">3.slmgr /ato</span><br></pre></td></tr></table></figure><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><h3 id="Windows-Office激活"><a href="#Windows-Office激活" class="headerlink" title="Windows/Office激活"></a>Windows/Office激活</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">打开Windows PowerShell</span><br><span class="line">输入irm https://massgrave.dev/get | iex </span><br><span class="line">1激活Windows</span><br><span class="line">2激活Office</span><br></pre></td></tr></table></figure><p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts">Github下载地址</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 激活 </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> Office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安装部署docker docker-compse</title>
+      <link href="/posts/3cc49a3/"/>
+      <url>/posts/3cc49a3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum update -y</span><br><span class="line">yum -y install yum-utils</span><br></pre></td></tr></table></figure><h2 id="更换阿里云"><a href="#更换阿里云" class="headerlink" title="更换阿里云"></a>更换阿里云</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br></pre></td></tr></table></figure><h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br></pre></td></tr></table></figure><h2 id="启动Docker"><a href="#启动Docker" class="headerlink" title="启动Docker"></a>启动Docker</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl docker start</span><br></pre></td></tr></table></figure><h2 id="停止Docker"><a href="#停止Docker" class="headerlink" title="停止Docker"></a>停止Docker</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure><h2 id="重启Docker"><a href="#重启Docker" class="headerlink" title="重启Docker"></a>重启Docker</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure><h2 id="卸载Docker"><a href="#卸载Docker" class="headerlink" title="卸载Docker"></a>卸载Docker</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras</span><br></pre></td></tr></table></figure><h2 id="CentOS7安装Docker-Compose"><a href="#CentOS7安装Docker-Compose" class="headerlink" title="CentOS7安装Docker-Compose"></a>CentOS7安装Docker-Compose</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://github.com/docker/compose/releases/download/1.23.1/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure><h2 id="修改文件权限"><a href="#修改文件权限" class="headerlink" title="修改文件权限"></a>修改文件权限</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown常用语法</title>
+      <link href="/posts/c6b59e99/"/>
+      <url>/posts/c6b59e99/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Markdown标题"><a href="#Markdown标题" class="headerlink" title="Markdown标题"></a>Markdown标题</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><br /></p><h2 id="Markdown段落"><a href="#Markdown段落" class="headerlink" title="Markdown段落"></a>Markdown段落</h2><h3 id="用-号或-表示"><a href="#用-号或-表示" class="headerlink" title="用*号或_表示"></a>用*号或_表示</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*斜粗体*</span>**</span></span><br></pre></td></tr></table></figure><p><em>斜体</em><br><strong>粗体</strong><br><strong><em>斜粗体</em></strong></p><p><br /></p><h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br></pre></td></tr></table></figure><hr><p><br /></p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">我的博客</span>](<span class="link">https://www.vediolight.cn</span>)</span><br></pre></td></tr></table></figure><p>欢迎访问<a href="https://www.vediolight.cn">我的博客</a></p><p><br /></p><h2 id="HTML语法"><a href="#HTML语法" class="headerlink" title="HTML语法"></a>HTML语法</h2><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>使用HTML标签设置字体</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="attribute">font</span> face=&quot;华文彩云&quot;&gt;华文彩云&lt;/<span class="attribute">font</span>&gt;</span><br><span class="line">&lt;<span class="attribute">font</span> face=&quot;黑体&quot;&gt;黑体&lt;/<span class="attribute">font</span>&gt;</span><br><span class="line">&lt;<span class="attribute">font</span> face=&quot;黑体&quot;&gt;微软雅黑&lt;/<span class="attribute">font</span>&gt;</span><br></pre></td></tr></table></figure><font face="华文彩云">华文彩云</font><br><font face="黑体">黑体</font><br><font face="黑体">微软雅黑</font><h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><p>使用HTML标签设置颜色</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="attribute">font</span> <span class="attribute">color</span>=red&gt; 红色&lt;/<span class="attribute">font</span>&gt;</span><br><span class="line">&lt;<span class="attribute">font</span> <span class="attribute">color</span>=blue&gt; 蓝色&lt;/<span class="attribute">font</span>&gt; </span><br><span class="line">&lt;<span class="attribute">font</span> <span class="attribute">color</span>=green&gt; 绿色&lt;/<span class="attribute">font</span>&gt;</span><br></pre></td></tr></table></figure><font color=red> 红色</font><br><font color="blue"> 蓝色</font> <br><font color=green> 绿色</font><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">红：255，0，0    <span class="comment">#FF0000</span></span><br><span class="line">橙: 255,125,0   <span class="comment">#FF7D00</span></span><br><span class="line">黄：255，255，0  <span class="comment">#FFFF00</span></span><br><span class="line">绿：0，255，0    <span class="comment">#00FF00</span></span><br><span class="line">蓝：0，0，255    <span class="comment">#0000FF</span></span><br><span class="line">靛: 0,255,255   <span class="comment">#00FFFF</span></span><br><span class="line">紫: 255,0,255   <span class="comment">#FF00FF</span></span><br></pre></td></tr></table></figure><font color=#FFFF00> 绿色</font><p><br /></p><h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="attribute">font</span> seze=<span class="number">6</span>&gt;字体大小&lt;/<span class="attribute">font</span>&gt;</span><br></pre></td></tr></table></figure><p><br /></p><h3 id="字体黑体，字号7，蓝色"><a href="#字体黑体，字号7，蓝色" class="headerlink" title="字体黑体，字号7，蓝色"></a>字体黑体，字号7，蓝色</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="attribute">font</span> face=&quot;黑体&quot; size=<span class="number">7</span> <span class="attribute">color</span>=blue&gt; 叠加效果&lt;/<span class="attribute">font</span>&gt;</span><br></pre></td></tr></table></figure><font face="黑体" size=7 color=blue> 叠加效果</font><hr><h2 id="小图标"><a href="#小图标" class="headerlink" title="小图标"></a>小图标</h2><div class="table-container"><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">效果</th><th style="text-align:center">代码</th><th style="text-align:center">名称</th><th style="text-align:center">效果</th><th style="text-align:center">代码</th></tr></thead><tbody><tr><td style="text-align:center">彩虹</td><td style="text-align:center">🌈</td><td style="text-align:center">&amp;#x1F308;</td><td style="text-align:center">草莓</td><td style="text-align:center">🍓</td><td style="text-align:center">&amp;#x1F353;</td></tr><tr><td style="text-align:center">电话</td><td style="text-align:center">📞</td><td style="text-align:center">&amp;#x1F4DE;</td><td style="text-align:center">枫叶</td><td style="text-align:center">🍁</td><td style="text-align:center">&amp;#x1F341;</td></tr><tr><td style="text-align:center">脚印</td><td style="text-align:center">👣</td><td style="text-align:center">&amp;#x1F463;</td><td style="text-align:center">喇叭</td><td style="text-align:center">📣</td><td style="text-align:center">&amp;#x1F4E3;</td></tr><tr><td style="text-align:center">拇指</td><td style="text-align:center">👍</td><td style="text-align:center">&amp;#x1F44D;</td><td style="text-align:center">ok</td><td style="text-align:center">👌</td><td style="text-align:center">&amp;#x1F44C;</td></tr><tr><td style="text-align:center">红苹果</td><td style="text-align:center">🍎</td><td style="text-align:center">&amp;#x1F34E;</td><td style="text-align:center">青苹果</td><td style="text-align:center">🍏</td><td style="text-align:center">&amp;#x1F34F;</td></tr><tr><td style="text-align:center">日期</td><td style="text-align:center">📆</td><td style="text-align:center">&amp;#x1F4C6;</td><td style="text-align:center">日期</td><td style="text-align:center">📅</td><td style="text-align:center">&amp;#x1F4C5;</td></tr><tr><td style="text-align:center">时间</td><td style="text-align:center">🕔</td><td style="text-align:center">&amp;#x1F554;</td><td style="text-align:center">手指</td><td style="text-align:center">👉</td><td style="text-align:center">&amp;#x1F449;</td></tr><tr><td style="text-align:center">统计</td><td style="text-align:center">📊</td><td style="text-align:center">&amp;#x1F4CA;</td><td style="text-align:center">问号</td><td style="text-align:center">❓</td><td style="text-align:center">&amp;#x2753;</td></tr><tr><td style="text-align:center">文件夹</td><td style="text-align:center">📂</td><td style="text-align:center">&amp;#x1F4C2;</td><td style="text-align:center">西瓜</td><td style="text-align:center">🍉</td><td style="text-align:center">&amp;#x1F349;</td></tr><tr><td style="text-align:center">邮箱</td><td style="text-align:center">📧</td><td style="text-align:center">&amp;#x1F4E7;</td><td style="text-align:center">直播</td><td style="text-align:center">🎦</td><td style="text-align:center">&amp;#x1F3A6;</td></tr><tr><td style="text-align:center">火箭</td><td style="text-align:center">🚀</td><td style="text-align:center">&amp;#x1F680;</td><td style="text-align:center">可</td><td style="text-align:center">🉑</td><td style="text-align:center">&amp;#x1F251;</td></tr><tr><td style="text-align:center">雪人</td><td style="text-align:center">⛄</td><td style="text-align:center">&amp;#x26C4;</td><td style="text-align:center">冠军</td><td style="text-align:center">🏆</td><td style="text-align:center">&amp;#x1F3C6;</td></tr><tr><td style="text-align:center">爱心</td><td style="text-align:center">💓</td><td style="text-align:center">&amp;#x1F493;</td><td style="text-align:center">伤心</td><td style="text-align:center">💔</td><td style="text-align:center">&amp;#x1F494;</td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr></tbody></table></div><table>    <tr>        <td>1</td>        <td colspan="3">2</td>        <!-- <td>3</td> -->        <!-- <td>4</td> -->    </tr>    <tr>        <td rowspan="3">5</td>        <td>6</td>        <td>7</td>        <td>8</td>    </tr>    <tr>        <!-- <td>9</td> -->        <td>10</td>        <td>11</td>        <td>12</td>    </tr>    <tr>        <!-- <td>13</td> -->        <td>14</td>        <td>15</td>        <td>16</td>    </tr></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OpenWrt手动安装PassWall插件</title>
+      <link href="/posts/5fe81f22/"/>
+      <url>/posts/5fe81f22/</url>
+      
+        <content type="html"><![CDATA[<h1 id="OpenWrt手动安装PassWall插件"><a href="#OpenWrt手动安装PassWall插件" class="headerlink" title="OpenWrt手动安装PassWall插件"></a>OpenWrt手动安装PassWall插件</h1><p>​        由于之前安装的OpenWrt都是很早以前的版本，正好今天有空更新一下固件，之前用的都是高大全PLUS版的，最近强迫症犯了，看着一堆用不到的插件很是难受，折腾一下mini版，安装完发现没有PassWall插件，手动安装一下。</p><hr><h2 id="下载passwall插件"><a href="#下载passwall插件" class="headerlink" title="下载passwall插件"></a>下载passwall插件</h2><p>github下载地址</p><blockquote><p><a href="https://github.com/xiaorouji/openwrt-passwall/releases">https://github.com/xiaorouji/openwrt-passwall/releases</a></p></blockquote><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/image-20231029171959981.png" alt="image-20231029171959981" style="zoom:80%;" /></p><p>我的软路由是N5105，下载的是X86架构的固件，另外需要把最上面2个也下载下来，解压后放到一个目录里。</p><h2 id="安装易有云"><a href="#安装易有云" class="headerlink" title="安装易有云"></a>安装易有云</h2><p><strong>Finalhell连接到openwrt</strong></p><p>via curl</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -sSL http://fw.koolcenter.com/binary/LinkEase/Openwrt/install_linkease.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure><p>via wget</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(wget --no-check-certificate -qO- http://fw.koolcenter.com/binary/LinkEase/Openwrt/install_linkease.sh)</span>&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>others</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/LinkEase/Openwrt/install_linkease.sh; sh ./install_linkease.sh</span><br></pre></td></tr></table></figure><p><strong>在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成</strong></p><h2 id="安装PassWall"><a href="#安装PassWall" class="headerlink" title="安装PassWall"></a>安装PassWall</h2><p>点击服务-易有云文件管理器-本地文件管理</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291755157.png" style="zoom:80%;" /></p><p>将之前下载的插件上传到/tmp文件夹中</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291800762.png" alt="image-20231029180045705" style="zoom: 40%;" /></p><p>Finalhell连接到openwrt输入以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp/passwall</span><br></pre></td></tr></table></figure><p>进入到安装文件目录</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opkg install *.ipk</span><br></pre></td></tr></table></figure><p>安装目录里的ipk文件</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291744989.png" alt="image-20231029174452809" style="zoom:80%;" /></p><p>PassWall已经安装成功</p><p><img src="https://vediolight.oss-cn-beijing.aliyuncs.com/images/202310291815134.png" alt="image-20231029181533090"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> OpenWrt </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OpenWrt </tag>
+            
+            <tag> PassWall </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FileBrowser搭建轻量级文件服务器</title>
+      <link href="/posts/9e1c86cc/"/>
+      <url>/posts/9e1c86cc/</url>
+      
+        <content type="html"><![CDATA[<p>FileBrowser是一款GO语言开发的轻量级文件服务器，跨平台，免费开源。可以通过浏览器对服务器上的文件进行管理，可以在浏览器上使用查看、下载、修改等各种功能。 你可以把它当作私有网盘来使用。</p><h1 id="UNRAID安装-FileBrowser"><a href="#UNRAID安装-FileBrowser" class="headerlink" title="UNRAID安装 FileBrowser"></a>UNRAID安装 FileBrowser</h1><h2 id="安装配制"><a href="#安装配制" class="headerlink" title="安装配制"></a>安装配制</h2><p><img src="https://s2.loli.net/2023/10/15/3um2R746WgJ5VAX.png" alt="image-20231015181559889" style="zoom: 33%;" /></p><p>点击安装</p><p><img src="https://s2.loli.net/2023/10/15/Y9ciwaJCbEoD3UF.png" alt="image-20231015183645939" style="zoom:33%;" /></p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><img src="https://s2.loli.net/2023/10/15/mrSsLHoTwQa7gef.png" alt="image-20231015183852590" style="zoom:33%;" /></p><p><img src="https://s2.loli.net/2023/10/15/Gx2krAW3CQ9FB81.png" alt="image-20231015184134583" style="zoom:33%;" /></p><p><img src="https://s2.loli.net/2023/10/15/wK7DLOTAEuivzsh.png" alt="image-20231015184151052" style="zoom:33%;" /></p><p>设置界面可以对用户、目录、语言进行设置。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unraid </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NAS </tag>
+            
+            <tag> UNRAID </tag>
+            
+            <tag> FileBrowser </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安装Butterfly主题</title>
+      <link href="/posts/fe7f4a08/"/>
+      <url>/posts/fe7f4a08/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装Butterfly主题"><a href="#安装Butterfly主题" class="headerlink" title="安装Butterfly主题"></a>安装Butterfly主题</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://gitee.com/immyw/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2023/10/15/Qo3ZHDs1d6bRYtu.png" alt="image-20231015124257370"></p><p>安装插件</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-renderer-pug</span> hexo<span class="literal">-renderer-stylus</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure><p>将\themes\butterfly\目录下的_config.yml复制个副本，并把文件名改为</p><p>_config.butterfly.yml，将文件剪切到根目录。</p><p>以后只需要在_config.butterfly.yml进行配置就行了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Butterfly </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo基础环境搭建</title>
+      <link href="/posts/79f55f62/"/>
+      <url>/posts/79f55f62/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Hexo基础环境搭建"><a href="#Hexo基础环境搭建" class="headerlink" title="Hexo基础环境搭建"></a>Hexo基础环境搭建</h2><p>安装hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>初始化hexo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>执行此命令，开启本地服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2023/10/15/6vxTEAcVYSGez4a.png" alt="image-20231015123218751"></p><p>本地网址：<a href="http://localhost:4000">http://localhost:4000</a></p><p><img src="https://s2.loli.net/2023/10/15/qgHS2ychrOza6Wu.png" style="zoom: 33%;" /></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Butterfly </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156/"/>
+      <url>/posts/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hello World </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hello World </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
