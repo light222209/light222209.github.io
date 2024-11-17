@@ -8,7 +8,7 @@
       <link href="/posts/589ae537/"/>
       <url>/posts/589ae537/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>函数名称</th><th>函数参数</th><th>说明</th></tr></thead><tbody><tr><td>绝对引用/混合引用</td><td>绝对引用<br>=$A$1<br>混合引用<br>=A$1 列在变，行不变<br>=$A1 列不变，行在变</td><td>快捷键F4</td></tr><tr><td>IF</td><td>参数1：判断条件 参数2：成立的结果 参数3：不成立的结果</td><td>判断语句</td></tr><tr><td>IFERROR</td><td>参数1：表达式 参数2：错误处理</td><td>判断返回错误处理</td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table></div>]]></content>
       
       
       
