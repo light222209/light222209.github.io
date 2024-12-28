@@ -1,3 +1,3 @@
-var posts=["2023/10/15/FileBrowser搭建轻量级文件服务器/","2023/10/15/Hexo基础环境搭建/","2023/10/29/Markdown常用语法/","2023/10/29/OpenWrt手动安装PassWall插件/","2024/12/08/NPT服务搭建与配制/","2024/11/17/Samba网络文件服务/","2023/10/15/安装Butterfly主题/","2023/11/13/激活Win10-Win11-Office/","2023/11/02/安装部署docker docker-compse/","2023/11/02/Centos安装SSH服务/","2024/12/15/安知鱼主题标签/","2024/12/15/CentOS7修改yum源/","2024/12/15/Esxi自动虚拟机快照（定时任务）/","2024/12/22/Picgo安装图片压缩插件/"];function toRandomPost(){
+var posts=["p/40896.html","p/18330.html","p/10134.html","p/79f55f62.html","p/9e1c86cc.html","p/c6b59e99.html","p/54354.html","p/5fe81f22.html","p/50373.html","p/ad2adac5.html","p/fe7f4a08.html","p/35124.html","p/3cc49a3.html","p/b97f2775.html"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
